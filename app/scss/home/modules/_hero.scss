@@ -1,0 +1,94 @@
+// Variables
+$darkBlue:   #005094;
+$linkColor:  #9eaaca;
+$headerFont: 'Roboto Condensed', sans-serif;
+$copyFont:   'Lato', sans-serif;
+$accentColor: #5b86d7;
+
+%border {
+    border: 1px solid yellow;
+}
+
+// Styles
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+
+    height: 800px;
+    background: url('../../img/bath.jpg') no-repeat center center;
+    background-size: cover;
+
+    // Header-Logo-Navigation Styles
+    // overall header styles
+    .intro--header {
+        background-color: $darkBlue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .intro--logo {
+            height: 80px;
+        }
+
+        // navigation styles
+        .intro--list {
+            width: 500px;
+            height: 100%;
+            display: flex;
+        }
+
+        .list--link {
+            font-size: 16px;
+            text-decoration: none;
+            color: $linkColor; 
+            font-family: $headerFont;
+            font-weight: bold;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: $accentColor;
+                color: #fff;
+            }
+        }
+        //end of navigation styles
+    }
+    // End Of Header-Navigation Styles
+
+    .intro--search {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .intro--input, 
+        .intro--listings, 
+        .listings--btn {
+          height: 100px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
