@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Agency</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home/main.css">
 </head>
 <body>
@@ -12,29 +13,31 @@
 <!-- intro hero -->
 <section class="intro">
     <header class="intro--header">
-        <img src="img/logo_bright.svg" class="intro--logo">
-        <nav class="intro--list">
-            <a class="list--link "href="index.html">Home</a>
-            <a class="list--link "href="properties.html">Properties</a>
-            <a class="list--link "href="pages.html">Pages</a>
+        <div class="container">
+          <img src="img/logo_bright.svg" class="intro--logo">
+          <nav class="intro--list">
+              <a class="list--link "href="index.html">Home</a>
+              <a class="list--link "href="properties.html">Properties</a>
+              <a class="list--link "href="pages.html">Pages</a>
             <a class="list--link "href="agents.html">Agents</a>
-        </nav>
+          </nav>
+        </div>
     </header>
 
     <section class="intro--search">
         <input class="intro--input" type="search" placeholder="Keywords">
-        <select class="intro--listings" name="type">
+        <select class="intro--listings type" name="type">
             <option class="listings--item" value="Listing Type">Listing Type</option>
             <option class="listings--item" value="House">House</option>
             <option class="listings--item" value="Flat">Flat</option>
         </select>
-        <select class="intro--listings" name="type">
+        <select class="intro--listings beds" name="type">
             <option class="listings--item" value="Beds">Beds</option>
             <option class="listings--item" value="2 beds">2 beds</option>
             <option class="listings--item" value="3 beds">3 beds</option>
             <option class="listings--item" value="4 beds">4 beds</option>
         </select>
-        <button>search</button>
+        <button class="listings--btn"><i class="fas fa-search"></i></button>
     </section>
 </section>
 <!-- end of intro hero -->

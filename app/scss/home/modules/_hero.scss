@@ -3,17 +3,19 @@ $darkBlue:   #005094;
 $linkColor:  #9eaaca;
 $headerFont: 'Roboto Condensed', sans-serif;
 $copyFont:   'Lato', sans-serif;
-$accentColor: #5b86d7;
+$accentBlue: #5b86d7;
+$accentRed: #f75555;
+$subtleBlue: #2d437b; // for copy and small text
+$borderGrey: #d6dde9;
 
-%border {
-    border: 1px solid yellow;
-}
+%borderRight { border-right: 2px solid $borderGrey; }
 
 // Styles
 .intro {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
+    justify-content: center;
 
     height: 800px;
     background: url('../../img/bath.jpg') no-repeat center center;
@@ -24,8 +26,16 @@ $accentColor: #5b86d7;
     .intro--header {
         background-color: $darkBlue;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+
+        .container {
+            width: 960px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         .intro--logo {
             height: 80px;
@@ -51,7 +61,7 @@ $accentColor: #5b86d7;
             align-items: center;
 
             &:hover {
-                background-color: $accentColor;
+                background-color: $accentBlue;
                 color: #fff;
             }
         }
@@ -61,34 +71,52 @@ $accentColor: #5b86d7;
 
     .intro--search {
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        width: 960px;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: -50px;
 
         .intro--input, 
         .intro--listings, 
         .listings--btn {
-          height: 100px;
+            height: 100px;
+            padding: 40px;
+            border: none;
+        }
+
+        .intro--input {
+            width: 60%;
+            @extend %borderRight;
+            &::placeholder {
+                color: $subtleBlue;
+                font-family: $copyFont;
+                font-size: 15px;
+            }
+        }
+
+        .intro--listings.type {
+            @extend %borderRight;
+            width: 22%;
+        }
+
+        .intro--listings.beds {
+            width: 18%;
+        }
+
+        select, option {
+            color: $subtleBlue;
+            font-family: $copyFont;
+            font-size: 15px;
+        }
+        
+        select:focus { outline: none; }
+
+        .listings--btn {
+            width: 100px;
+            background-color: $accentRed;
+            .fas {
+                color: #fff;
+            } 
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
