@@ -1,0 +1,48 @@
+@import "variables";
+
+// Extends
+%borderRight { border-right: 2px solid $borderGrey; }
+%border { border: 1px solid $borderGrey; }
+%boxShadow { box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .1); }
+
+%section--heading {
+    font-size: 32px;
+    font-family: $headerFont;
+    font-weight: 700;
+    color: $headerBlue;
+}
+
+%module--heading {
+    font-size: 16px;
+    font-family: $headerFont;
+    font-weight: 700;
+    color: $headerBlue;
+}
+
+%module--copy {
+    color: $grey;
+    font-family: $copyFont;
+    font-size: 100%;
+    padding-top: 16px;    
+    line-height: 18px;
+    word-spacing: 10px;
+    letter-spacing: .5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,14 +1,8 @@
-// Variables
-$darkBlue:   #005094;
-$linkColor:  #9eaaca;
-$headerFont: 'Roboto Condensed', sans-serif;
-$copyFont:   'Lato', sans-serif;
-$accentBlue: #5b86d7;
-$accentRed: #f75555;
-$subtleBlue: #2d437b; // for copy and small text
-$borderGrey: #d6dde9;
+@import "variables";
+@import "mixins";
+@import "extends";
 
-%borderRight { border-right: 2px solid $borderGrey; }
+
 
 // Styles
 .intro {
@@ -43,9 +37,10 @@ $borderGrey: #d6dde9;
 
         // navigation styles
         .intro--list {
-            width: 500px;
+            width: 750px;
             height: 100%;
             display: flex;
+            justify-content: flex-end;
         }
 
         .list--link {
@@ -54,7 +49,8 @@ $borderGrey: #d6dde9;
             color: $linkColor; 
             font-family: $headerFont;
             font-weight: bold;
-            width: 100%;
+            //width: 100%;
+            padding: 0 40px; 
             height: 100%;
             display: flex;
             justify-content: center;
@@ -64,17 +60,29 @@ $borderGrey: #d6dde9;
                 background-color: $accentBlue;
                 color: #fff;
             }
+
+            &:last-of-type {
+                background-color: #fff;
+                color: $accentRed;
+
+                &:hover {
+                    background-color: $accentBlue;
+                    color: #fff;
+                }
+            }
         }
         //end of navigation styles
     }
     // End Of Header-Navigation Styles
 
+    // Intro Search Form Section Styles
     .intro--search {
         display: flex;
         width: 960px;
         justify-self: center;
         align-self: end;
         margin-bottom: -50px;
+        @extend %boxShadow;
 
         .intro--input, 
         .intro--listings, 
@@ -108,15 +116,22 @@ $borderGrey: #d6dde9;
             font-family: $copyFont;
             font-size: 15px;
         }
-        
-        select:focus { outline: none; }
 
         .listings--btn {
-            width: 100px;
             background-color: $accentRed;
-            .fas {
-                color: #fff;
-            } 
+            color: #fff;
+
+            &:hover {
+                background-color: $accentBlue;
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
