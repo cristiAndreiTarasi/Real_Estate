@@ -1,8 +1,4 @@
-// Imports
-// @import "extends";
-// @import "variables";
-// @import "mixins";
-
+// LISTINGS 
 
 // Popupar Listing Section styles
 .listings {
@@ -11,7 +7,7 @@
 
     .container {
         width: 1170px;
-        height: 830px;
+        height: auto;
 
         display: grid;
         grid-template-rows: 250px 1fr;
@@ -27,34 +23,39 @@
                 @extend %section--heading;
             }
 
-            .listings--title-btn {
-                border: none;
-                background-color: transparent;
-                color: rgba($accentRed, 50%);
-                border: 1px solid $accentRed;
-                text-transform: uppercase;
-                padding: 5px 10px;
-                font-size: 10px;
-                font-family: $copyFont;
+            .listings--view {
+                width: 130px;
+                display: flex;
+                justify-content: space-between;
 
-                &:hover {
-                    background-color: $accentBlue;
-                    color: #fff;
-                    border: 1px solid transparent;
-                    cursor: pointer;
+                .listings--copy {
+                    @extend %module--copy;                    
+                }
+
+                .fas {
+                    color: $grey;
+                    padding-top: 16px;    
+                    line-height: 22px;
+                }
+
+                .fas.active {
+                    color: $accentRed;
                 }
             }
         }
 
         // Modules wrapper styles
         .listings--modules {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+            //justify-items: center;
+            margin-bottom: 50px;
 
             // Module styles
             .module {
                 border: 1px solid $borderGrey;
-                width: 32%;
+                width: 100%;
                 height: 430px;
                 position: relative;
 
@@ -106,15 +107,30 @@
             .module--article {
                 height: auto;
 
-                .module--heading,
-                p:first-of-type {
-                    padding-left: 16px;
-                }
+                .heading--group {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
 
+                    .module--heading,
+                    p:first-of-type {
+                        padding-left: 16px;
+                    }
 
-                .module--heading {
-                    @extend %module--heading;
-                    padding-top: 16px;
+                    .module--heading {
+                        @extend %module--heading;
+                        padding-top: 16px;
+                    }
+
+                    .fas {
+                        color: $grey;
+                        padding-right: 16px;
+
+                        &:hover {
+                            color: $accentRed;
+                            cursor: pointer;
+                        }
+                    }
                 }
 
                 & p:first-of-type {
@@ -155,6 +171,28 @@
                         background-color: $accentBlue;
                         cursor: pointer;
                     }
+                }
+            }
+        }
+
+        .btn--group {
+            text-align: center;
+            z-index: 1000;
+            margin-bottom: 100px;
+
+            .btn {
+                @extend %--btn;
+                margin-right: -4px;
+                border: none;
+                width: 50px;
+                height: 50px;
+                background: $headerBlue;
+                cursor: pointer;
+                color: $white;
+
+                &:hover, &:focus {
+                    background-color: $accentBlue;
+                    outline: none;
                 }
             }
         }

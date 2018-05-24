@@ -23,15 +23,29 @@
     color: $grey;
     font-family: $copyFont;
     font-size: 100%;
+    font-weight: 300;
     padding-top: 16px;    
-    line-height: 18px;
-    word-spacing: 10px;
-    letter-spacing: .5px;
+    line-height: 22px;
+}
+
+%carousel--module {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+
+  .testimonial--thumb {
+    width: 50%;
+    height: 100%;
+  }
 }
 
 
-
-
+%--btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
 
 

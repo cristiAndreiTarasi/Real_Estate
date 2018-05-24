@@ -1,13 +1,33 @@
-// Variables
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-// Home Page
+// Base
+@import "base/reset";
+@import "base/mixins";
+@import "base/extends";
+@import "base/variables";
+
+// Layout
 @import "home/hero";
+@import "home/footer";
+
+// Home
 @import "home/listings";
 @import "home/tricks";
+@import "home/featured";
 @import "home/testimonial";
 @import "home/agents";
-@import "home/blog";
+
+// Properties
+ @import "properties/properties";
+
+ @import "agents/agents";
+
+ // Contact
+ @import "contact/header";
+ @import "contact/contact";
+
+
+

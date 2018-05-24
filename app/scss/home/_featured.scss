@@ -5,7 +5,7 @@
 
 
 // Popupar Listing Section styles
-.listings {
+.recently-featured {
     display: flex;
     justify-content: center;
 
@@ -60,6 +60,19 @@
 
                 .flag {
                     background-color: $headerBlue;
+                    display: inline-block;
+                    color: $white;
+                    font-size: 12px;
+                    font-family: $copyFont;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    position: absolute;
+                    top: 20px;
+                    left: 110px;
+                }
+
+                .flag.f {
+                    background-color: $accentRed;
                     display: inline-block;
                     color: $white;
                     font-size: 12px;

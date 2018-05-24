@@ -1,6 +1,7 @@
-@import "variables";
-@import "mixins";
-@import "extends";
+// Imports
+// @import "variables";
+// @import "mixins";
+// @import "extends";
 
 
 
@@ -18,13 +19,13 @@
     // Header-Logo-Navigation Styles
     // overall header styles
     .intro--header {
-        background-color: $darkBlue;
+        background-color: $headerBlue;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .container {
-            width: 960px;
+            width: 1170px;
             height: 100px;
             display: flex;
             justify-content: space-between;
@@ -44,11 +45,11 @@
         }
 
         .list--link {
-            font-size: 16px;
+            font-size: 14px;
             text-decoration: none;
             color: $linkColor; 
             font-family: $headerFont;
-            font-weight: bold;
+            font-weight: 700;
             //width: 100%;
             padding: 0 40px; 
             height: 100%;
@@ -75,10 +76,81 @@
     }
     // End Of Header-Navigation Styles
 
+    // Floating listing panel Styles
+    .container {
+        width: 1170px;
+        height: 400px;
+        display: flex;
+        justify-self: center;
+        align-items: flex-end;
+        .module {
+            border: 1px solid $borderGrey;
+            width: 450px;
+            height: 210px;
+            //position: absolute;
+            background-color: #fff;
+
+            .module--article {
+                height: auto;
+
+                .module--heading,
+                p:first-of-type {
+                    padding-left: 16px;
+                }
+
+
+                .module--heading {
+                    @extend %module--heading;
+                    padding-top: 16px;
+                }
+
+                & p:first-of-type {
+                    @extend %module--copy;
+                }
+
+                & p:last-of-type {
+                    color: $headerBlue;
+                    font-family: $copyFont;
+                    font-size: 100%;
+                    padding: 16px 0 16px 16px;
+                }
+            }
+
+            .module--info {
+                border-top: 1px solid $borderGrey;
+                margin: 0 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 90px;
+
+                p {
+                    font-size: 18px;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    color: $accentBlue;
+                }
+
+                .module--btn {
+                    font-size: 11px;
+                    color: #fff;
+                    background-color: $accentRed;
+                    border: none;
+                    padding: 10px;
+
+                    &:hover {
+                        background-color: $accentBlue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
     // Intro Search Form Section Styles
     .intro--search {
         display: flex;
-        width: 960px;
+        width: 1170px;
         justify-self: center;
         align-self: end;
         margin-bottom: -50px;
@@ -98,6 +170,7 @@
             &::placeholder {
                 color: $subtleBlue;
                 font-family: $copyFont;
+                font-weight: 700; 
                 font-size: 15px;
             }
         }

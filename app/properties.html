@@ -11,12 +11,11 @@
 </head>
 
 <body>
-
 <!-- intro hero -->
 <section class="intro">
     <header class="intro--header">
         <div class="container">
-          <img src="img/logo_bright.svg" class="intro--logo">
+          <img src="img/logo_bright.svg" class="intro--logo" alt="logo">
           <nav class="intro--list">
               <a class="list--link "href="index.html">Home</a>
               <a class="list--link "href="properties.html">Properties</a>
@@ -28,21 +27,11 @@
     </header>
       <!-- end of header -->
 
-    <div class="container">
-      <section class="module">
-        <article class="module--article">
-          <h3 class="module--heading">Beach House</h3>
-          <p>1348 209 St, Flushing</p>
-          <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-        </article>
-        <div class="module--info">
-          <p>$100.000</p>
-          <button class="module--btn">MORE INFO</button>
-        </div>
-      </section>
-      <!-- end of listings module -->
-    </div>
-      <!-- end of container -->
+      <!-- TEMPORARY --> 
+      <section class="map-here" style="width: 300px; height: 150px; background: white; text-align: center; margin-left: 400px; margin-top: 200px;"> 
+          <h1 style="font-family: Roboto, sans-sans-serif; font-size: 4em; padding-top: 10px;">MAP HERE</h1>
+    </section>
+      <!-- TEMPORARY --> 
 
     <section class="intro--search">
         <input class="intro--input" type="search" placeholder="Keywords">
@@ -65,11 +54,18 @@
 
 <!-- listings -->
 <section class="listings">
-
     <div class="container">
         <div class="listings--title">
-            <h2 class="listings--heading">Popular Listings</h2>
-            <button class="listings--title-btn">More Properties</button>
+            <h2 class="listings--heading">Properties</h2>
+            <section class="listings--view">
+                <p class="listings--copy">6 results</p>
+                <a href="grid.html" class="listing--view-btn">
+                    <i class="fas fa-th-large active"></i>
+                </a>
+                <a href="list.html" class="listing--view-btn">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+            </section>
         </div>
             <!-- end of listings title -->
 
@@ -79,7 +75,10 @@
                 <div class="module--thumb one"></div>
                     <!-- end of module thumb -->
                 <article class="module--article">
-                    <h3 class="module--heading">Beach House</h3>
+                    <section class="heading--group">
+                        <h3 class="module--heading">Beach House</h3>
+                        <i class="fas fa-heart"></i>
+                    </section>
                     <p>1348 209 St, Flushing</p>
                     <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
                 </article>
@@ -95,7 +94,10 @@
                 <div class="module--thumb two"></div>
                     <!-- end of module thumb -->
                 <article class="module--article">
-                    <h3 class="module--heading">Roof Apartments</h3>
+                    <section class="heading--group">
+                        <h3 class="module--heading">Roof Apartments</h3>
+                        <i class="fas fa-heart"></i>
+                    </section>
                     <p>1348 209 St, Flushing</p>
                     <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
                 </article>
@@ -111,7 +113,67 @@
                 <div class="module--thumb three"></div>
                     <!-- end of module thumb -->
                 <article class="module--article">
-                    <h3 class="module--heading">Lofts</h3>
+                    <section class="heading--group">
+                        <h3 class="module--heading">Lofts</h3>
+                        <i class="fas fa-heart"></i>
+                    </section>
+                    <p>1348 209 St, Flushing</p>
+                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
+                </article>
+                <div class="module--info">
+                    <p>$100.000</p>
+                    <button class="module--btn">MORE INFO</button>
+                </div>
+            </section>
+                <!-- end of listings module -->
+
+            <section class="module">
+                <div class="flag">For Sale</div>
+                <div class="module--thumb one"></div>
+                    <!-- end of module thumb -->
+                <article class="module--article">
+                    <section class="heading--group">
+                        <h3 class="module--heading">Beach House</h3>
+                        <i class="fas fa-heart"></i>
+                    </section>
+                    <p>1348 209 St, Flushing</p>
+                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
+                </article>
+                <div class="module--info">
+                    <p>$100.000</p>
+                    <button class="module--btn">MORE INFO</button>
+                </div>
+            </section>
+                <!-- end of listings module -->
+
+            <section class="module">
+                <div class="flag">For Sale</div>
+                <div class="module--thumb two"></div>
+                    <!-- end of module thumb -->
+                <article class="module--article">
+                    <section class="heading--group">
+                        <h3 class="module--heading">Roof Apartments</h3>
+                        <i class="fas fa-heart"></i>
+                    </section>
+                    <p>1348 209 St, Flushing</p>
+                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
+                </article>
+                <div class="module--info">
+                    <p>$100.000</p>
+                    <button class="module--btn">MORE INFO</button>
+                </div>
+            </section>
+                <!-- end of listings module -->
+
+            <section class="module">
+                <div class="flag">For Sale</div>
+                <div class="module--thumb three"></div>
+                    <!-- end of module thumb -->
+                <article class="module--article">
+                    <section class="heading--group">
+                        <h3 class="module--heading">Lofts</h3>
+                        <i class="fas fa-heart"></i>
+                    </section>
                     <p>1348 209 St, Flushing</p>
                     <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
                 </article>
@@ -123,250 +185,20 @@
                 <!-- end of listings module -->
         </div>
         <!-- end of listings modules -->
+
+        <section class="btn--group">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">Here </button>
+            <button class="btn">XMLHttp</button>
+            <button class="btn">Requests</button>
+        </section>
     </div> 
         <!-- end of container -->
+
 </section>
 <!-- end of listings -->
-
-<!-- property tricks -->
-<section class="tricks">
-    <section class="tricks--img"></section>
-
-    <section class="tricks--modules">
-        <h2 class="tricks--heading">Properties Tricks</h2>
-        <div class="modules--group">
-            <article class="tricks--module">
-                <div class="title--group">
-                    <i class="far fa-lightbulb fa-2x module--img"></i>
-                    <h3 class="module--heading">Leading industries</h3>
-                </div>
-                <p class="module--copy">Adipisicing nobis repudiandae molestiae iusto officiis rem. Ipsam veritatis pariatur sequi reprehenderit laudantium, labore officiis temporibus illo Quae tempora a</p>
-            </article>
-            <!-- end of tricks__module -->
-
-            <article class="tricks--module">
-                <div class="title--group">
-                    <i class="far fa-bell fa-2x module--img"></i>
-                    <h3 class="module--heading">Market Oriented</h3>
-                </div>
-                <p class="module--copy">Adipisicing nobis repudiandae molestiae iusto officiis rem. Ipsam veritatis pariatur sequi reprehenderit laudantium, labore officiis temporibus illo Quae tempora a</p>
-            </article>
-            <!-- end of tricks__module -->
-
-            <article class="tricks--module">
-                <div class="title--group">
-                    <i class="fas fa-search fa-2x module--img"></i>
-                    <h3 class="module--heading">Intuitive Search Options</h3>
-                </div>
-                <p class="module--copy">Adipisicing nobis repudiandae molestiae iusto officiis rem. Ipsam veritatis pariatur sequi reprehenderit laudantium, labore officiis temporibus illo Quae tempora a</p>
-            </article>
-            <!-- end of tricks__module -->
-
-            <article class="tricks--module">
-                <div class="title--group">
-                    <i class="far fa-check-circle fa-2x module--img"></i>
-                    <h3 class="module--heading">Safe Investments</h3>
-                </div>
-                <p class="module--copy">Adipisicing nobis repudiandae molestiae iusto officiis rem. Ipsam veritatis pariatur sequi reprehenderit laudantium, labore officiis temporibus illo Quae tempora a</p>
-            </article>
-            <!-- end of tricks__module -->
-        </div>
-            <!-- end of modules group -->
-    </section>
-        <!-- end of tricks modules -->
-</section>
-<!-- end of property tricks -->
-
-<!-- featured -->
-<section class="recently-featured">
-
-    <div class="container">
-        <div class="listings--title">
-            <h2 class="listings--heading">Recently Featured</h2>
-            <button class="listings--title-btn">More Properties</button>
-        </div>
-            <!-- end of listings title -->
-
-        <div class="listings--modules">
-            <section class="module">
-                <div class="flag f">Featured</div>
-                <div class="flag">For Rent</div>
-                <div class="module--thumb one"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <h3 class="module--heading">Beach House</h3>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag f">Featured</div>
-                <div class="flag">For Rent</div>
-                <div class="module--thumb two"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <h3 class="module--heading">Roof Apartments</h3>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag f">Featured</div>
-                <div class="flag">For Rent</div>
-                <div class="module--thumb three"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <h3 class="module--heading">Lofts</h3>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-        </div>
-        <!-- end of listings modules -->
-    </div> 
-        <!-- end of container -->
-</section>
-<!-- end of featured -->
-
-<!-- testimonials -->
-<section class="testimonial">
-
-  <section class="btn--group">
-    <button class="btn prev"><i class="fas fa-arrow-left fa-lg"></i></button>
-    <button class="btn next"><i class="fas fa-arrow-right fa-lg"></i></button>
-  </section>
-
-  <section class="carousel--module one">
-    <section class="testimonial--thumb"></section>
-
-    <section class="testimonial--quote">
-      <blockquote class="testimonial--blockquote">
-        <i class="fas fa-quote-left"></i>
-        <p class="testimonial--copy">
-        Adipisicing neque obcaecati soluta corrupti adipisicing consequuntur Placeat dolores officiis libero voluptate voluptatibus numquam blanditiis. Doloribus ullam aspernatur fuga est
-        </p>
-        <ul class="testimonial--list">
-          <li class="list--item">John Doe</li>
-          <li class="list--item">Customer</li>
-        </ul>
-      </blockquote>
-    </section>
-      <!-- end of testimonial quote -->
-  </section>
-    <!-- end of carousel module -->
-
-  <section class="carousel--module two">
-    <section class="testimonial--thumb"></section>
-
-    <section class="testimonial--quote">
-      <blockquote class="testimonial--blockquote">
-        <i class="fas fa-quote-left"></i>
-        <p class="testimonial--copy">
-        Adipisicing neque obcaecati soluta corrupti adipisicing consequuntur Placeat dolores officiis libero voluptate voluptatibus numquam blanditiis. Doloribus ullam aspernatur fuga est
-        </p>
-        <ul class="testimonial--list">
-          <li class="list--item">John Doe</li>
-          <li class="list--item">Customer</li>
-        </ul>
-      </blockquote>
-    </section>
-      <!-- end of testimonial quote -->
-  </section>
-    <!-- end of carousel module -->
-
-  <section class="carousel--module three">
-    <section class="testimonial--thumb"></section>
-
-    <section class="testimonial--quote">
-      <blockquote class="testimonial--blockquote">
-        <i class="fas fa-quote-left"></i>
-        <p class="testimonial--copy">
-        Adipisicing neque obcaecati soluta corrupti adipisicing consequuntur Placeat dolores officiis libero voluptate voluptatibus numquam blanditiis. Doloribus ullam aspernatur fuga est
-        </p>
-        <ul class="testimonial--list">
-          <li class="list--item">John Doe</li>
-          <li class="list--item">Customer</li>
-        </ul>
-      </blockquote>
-    </section>
-      <!-- end of testimonial quote -->
-  </section>
-    <!-- end of carousel module -->
-</section>
-<!-- end of testimonials -->
-
-<!-- agents -->
-<section class="agents">
-  <div class="container">
-    <h2 class="agents--heading">Perfect Agents</h2>
-
-    <div class="agents--modules">
-      <section class="agent--module one">
-        <div class="agent--thumb"></div>
-        <article class="agent--article">
-          <h3 class="module--heading">John Doe</h3>
-          <p class="module--copy">Sit enim ducimus recusandae labore praesentium, amet. Illo officia quisquam</p>
-          <a href="tel:+13174562564" class="contact">317-456-2564</a>
-        </article>
-        <button class="module--btn">VIEW PROFILE</button>
-      </section>
-      <!-- end of agent__module -->
-
-      <section class="agent--module two">
-        <div class="agent--thumb"></div>
-        <article class="agent--article">
-          <h3 class="module--heading">John Doe</h3>
-          <p class="module--copy">Sit enim ducimus recusandae labore praesentium, amet. Illo officia quisquam</p>
-          <a href="tel:+13174562564" class="contact">317-456-2564</a>
-        </article>
-        <button class="module--btn">VIEW PROFILE</button>
-      </section>
-      <!-- end of agent__module -->
-
-      <section class="agent--module three">
-        <div class="agent--thumb"></div>
-        <article class="agent--article">
-          <h3 class="module--heading">John Doe</h3>
-          <p class="module--copy">Sit enim ducimus recusandae labore praesentium, amet. Illo officia quisquam</p>
-          <a href="tel:+13174562564" class="contact">317-456-2564</a>
-        </article>
-        <button class="module--btn">VIEW PROFILE</button>
-      </section>
-      <!-- end of agent__module -->
-
-      <section class="agent--module four">
-        <div class="agent--thumb"></div>
-        <article class="agent--article">
-          <h3 class="module--heading">John Doe</h3>
-          <p class="module--copy">Sit enim ducimus recusandae labore praesentium, amet. Illo officia quisquam</p>
-          <a href="tel:+13174562564" class="contact">317-456-2564</a>
-        </article>
-        <button class="module--btn">VIEW PROFILE</button>
-      </section>
-      <!-- end of agent__module -->
-    </div>
-      <!-- end of agents modules -->
-  </div>
-    <!-- end of container -->
-</section>
-<!-- end of agents -->
 
 <!-- footer -->
 <footer class="footer">
@@ -446,6 +278,5 @@
     <!-- end of container -->
 </footer>
 <!-- end of footer -->
-
 </body>
 </html>

@@ -1,0 +1,113 @@
+
+// Imports
+// @import "extends";
+// @import "variables";
+// @import "mixins";
+
+
+// Footer Styles
+.footer {
+    height: 460px;
+    background-color: $darkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 1170px;
+
+        // Parent Container for all modules(footer--modules)
+        .footer--modules {
+            display: flex;
+            justify-content: space-between;
+
+            // Individual modules general rules
+            .footer--module {
+                width: 25%;
+
+                // heading h2
+                .module--heading {
+                    font-size: 16px;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    color: $white;
+                    padding-bottom: 40px;
+                    margin-top: 80px;
+                }
+
+                .list--item {
+                    padding: 10px 0 5px 0;
+                }
+
+                .list--link {
+                    color: $white;
+                    text-decoration: none;
+                    font-family: $copyFont;
+                    font-size: 14px;
+                }
+
+                // FontAwesome glyph
+                .fas {
+                    margin-right: 10px;
+                }
+            }
+
+            // logo module styles
+            .footer--logo {
+                width: 60px;
+                margin-bottom: 40px;
+            }
+
+            .module--copy {
+                @extend %module--copy;
+            }
+        }
+
+        .module--nav {
+            display: flex;
+            justify-content: flex-start;
+
+            .module--list {
+                padding-right: 40px;
+            }
+        }
+
+        .module--form {
+            width: 100%;
+            margin-top: 12px;
+
+            .module--input {
+               @extend %--btn; 
+               width: 70%;
+               height: 50px;
+            }
+
+            .module--btn {
+                @extend %--btn;
+                width: 30%;
+                height: 50px;
+                margin-left: -4px;
+                background-color: $accentBlue;
+                color: $white;
+                font-family: $headerFont;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+        }
+
+        .social {
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 20px;
+
+            .list--item {
+                margin-right: 15px;
+
+                .fab {
+                    color: $accentBlue;
+                }
+            }
+        }
+    }
+}
