@@ -99,13 +99,10 @@ table {
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;
   justify-content: center;
-  height: 800px;
-  background: url("../../img/bath.jpg") no-repeat center center;
-  background-size: cover;
-  /*.carousel-inner {
-        height: 800px;
-        z-index: -100;
-    }*/ }
+  height: 800px; }
+  .intro .carousel-inner {
+    height: 800px;
+    z-index: -100; }
   .intro .intro--header {
     background-color: #203260;
     display: flex;
