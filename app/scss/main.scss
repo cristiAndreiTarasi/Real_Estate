@@ -21,13 +21,15 @@
 @import "home/agents";
 
 // Properties
- @import "properties/properties";
+@import "properties/properties";
 
- @import "agents/agents";
+@import "agents/agents";
 
- // Contact
- @import "contact/header";
- @import "contact/contact";
+@import "add/add";
+
+// Contact
+@import "contact/header";
+@import "contact/contact";
 
 
 

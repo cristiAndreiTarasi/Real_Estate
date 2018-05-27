@@ -9,8 +9,9 @@ const gulp      = require('gulp'),
 
 const src = {
     scss: 'app/scss/**/*.scss',
-    css: 'app/css',
+    js: 'app/js/**/*.js',
     html: 'app/*.html',
+    css: 'app/css',
     img: 'app/img/*',
     dist: './dist/css'
 };
@@ -22,6 +23,7 @@ gulp.task('serve', ['sass', 'imagemin'], function() {
     });
 
     gulp.watch(src.scss, ['sass']);
+    gulp.watch([src.js]).on('change', reload);;
     gulp.watch(src.html).on('change', reload);
 });
 

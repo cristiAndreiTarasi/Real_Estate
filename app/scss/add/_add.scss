@@ -1,117 +1,119 @@
-//Agents
+// Add Property
 
-
-.breadcrumbs {
-    background-color: #172343;
-    height: 200px;
+.add {
     display: flex;
     justify-content: center;
 
     .container {
         width: 1170px;
-        height: auto;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        border: 1px solid $borderGrey;
+        margin: 100px 0;
     }
 
-    .bread--heading {
-        font-size: 32px;
-        font-family: $headerFont;
-        font-weight: 700;
-        color: $white;
-    }
+    .wrapper {
+        margin: 40px;
 
-    .trails {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        width: 10%;
+        // the sign in row on top af the form
+        .signin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background-color: #f9f9f9;
+            border: 1px solid $borderGrey;
 
-        a {
-            font-size: 14px;
-            font-family: $copyFont;
-            text-decoration: none;
-            font-weight: 700;
-            color: $accentRed;
-
-            &:hover {
-                color: rgba($accentRed, .4);
+            .signin--copy {
+                width: 80%;
+                color: $grey;
+                font-family: $copyFont;
+                font-size: 100%;
+                font-weight: 300;
+                padding: 0 15px;
             }
-        }
 
-        .active {
-            color: $accentBlue;
-        }
-
-        .fas {
-            color: $accentBlue;
-            font-size: 12px;
-        }
-    }
-}
-
-.agent {
-    height: 650px;
-    display: flex;
-
-    .agent--thumb,
-    .agent--bio {
-        width: 50%;
-    }
-
-    .agent--thumb {
-        background: url(../../img/agent_profile.jpg) center;
-        background-size: cover;
-    }
-
-    .agent--bio {
-        display: flex;
-        align-items: center;
-        background-color: $headerBlue;
-
-        .agent--article {
-            padding: 0 90px;
-
-            .agent--heading {
-                font-size: 32px;
-                font-family: $headerFont;
-                font-weight: 700;
+            .signin--btn {
+                //width: 150px;
+                @extend %--btn;
+                background-color: $accentRed;
                 color: $white;
-            }
-
-            .agent--subheading {
-                font-size: 16px;
                 font-family: $headerFont;
-                font-weight: 700;
-                color: $accentBlue;
+                font-weight: 500;
                 text-transform: uppercase;
-                display: block;
-                padding-top: 20px;
-            }
-
-            .agent--copy {
-                @extend %module--copy;
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-
-            .social {
-                width: 80px;
-                display: flex;
-                justify-content: space-between;
-
-                .fab {
-                    color: $accentBlue;
+                font-size: 12px;
+                padding: 15px 50px;
+                margin: 13px;
+                &:hover {
+                    background-color: $accentBlue;
+                    cursor: pointer;
                 }
             }
         }
+
+        .form--group {
+            display: inline-block;
+            height: 75px;
+            width: 100%;
+            margin-top: 40px;
+
+            .group--label,
+            .group--input {
+                //display: block;
+            }
+
+            .group--label {
+                @extend %module--heading;
+            }
+
+            .group--input {
+                @extend %--btn;
+                height: 50px;
+                width: 100%;
+                margin-top: 10px;
+                @extend %module--copy;
+                border: 1px solid $borderGrey;
+
+                &::placeholder {
+                    padding-left: 20px;
+                }
+            }
+
+            .descript {
+                height: 350px;
+                width: 100%;
+                background-color: rgba($grey, .3);
+                margin-top: 10px;
+                border: 1px solid $borderGrey;
+            }
+
+        }
+
+        .map--box {
+            height: 350px;
+            width: 100%;
+            background-color: rgba($grey, .3);
+            margin-top: 40px;
+            background: url('../img/world-map.jpg') 100% center;
+            background-size: cover;
+            border: 1px solid $borderGrey;
+        }
     }
-}
 
-
-.listings {
-    margin-bottom: 100px;
+    .add--btn {
+        @extend %--btn;
+        display: block;
+        width: 100%;
+        background-color: $accentRed;
+        color: $white;
+        font-family: $headerFont;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 15px 50px;
+        margin-top: 40px;
+        &:hover {
+            background-color: $accentBlue;
+            cursor: pointer;
+        }
+    }
 }
 

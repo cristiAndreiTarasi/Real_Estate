@@ -13,8 +13,13 @@
     justify-content: center;
 
     height: 800px;
-    background: url('../../img/bath.jpg') no-repeat center center;
-    background-size: cover;
+    //background: url('../../img/bath.jpg') no-repeat center center;
+    //background-size: cover;
+
+    /*.carousel-inner {
+        height: 800px;
+        z-index: -100;
+    }*/
 
     // Header-Logo-Navigation Styles
     // overall header styles
@@ -83,6 +88,7 @@
         display: flex;
         justify-self: center;
         align-items: flex-end;
+
         .module {
             border: 1px solid $borderGrey;
             width: 450px;

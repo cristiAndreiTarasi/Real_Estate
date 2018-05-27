@@ -29,164 +29,143 @@
 <!-- breadcrumbs trail -->
 <section class="breadcrumbs">
     <div class="container">
-        <h2 class="bread--heading">Agents</h2>
+        <h2 class="bread--heading">Add Property</h2>
         <div class="trails">
             <a href="index.html">Home</a>
             <i class="fas fa-chevron-right"></i>
-            <a class="active" href="agents.html">Agents</a>
+            <a class="active" href="agents.html">Properties</a>
         </div>
     </div>
 </section>
 <!-- end of breadcrumbs trail -->
 
-<!-- agent -->
-<section class="agent">
-    <div class="agent--thumb"></div>
-    <div class="agent--bio">
-        <article class="agent--article">
-            <h2 class="agent--heading">John Doe</h2>
-            <span class="agent--subheading">Position</span>
-            <p class="agent--copy">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt aucto a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taci socio squ ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
-
-            <ul class="social"> <li class="list--item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="list--item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li class="list--item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </article>
-    </div>
-</section>
-<!-- end of agent -->
-
-<!-- active-listings -->
-<section class="listings">
+<!-- add-property-form -->
+<section class="add">
     <div class="container">
-        <div class="listings--title">
-            <h2 class="listings--heading">Active listings</h2>
+        <div class="wrapper">
+            <div class="signin">
+                <p class="signin--copy">If you don’t have an account you can optionally create one below by entering your email address/username. Your account details will be confirmed via email.</p>
+                <button class="signin--btn" type="button">Sign In</button>
+            </div>
+                <!-- end of sign-in -->
+
+            <form action="">
+                <fieldset class="fieldset">
+                    <div class="form--group">
+                        <label class="group--label" for="email">Your email (optional)</label>
+                        <input type="email" placeholder="Email" name="email"
+                        class="group--input">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="name">Listing Name</label>
+                        <input type="email" placeholder="Your Listing Name" class="group--input" name="name" >
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="location">Location (optional)</label>
+                        <input type="email" placeholder="Your City"
+                        name="location" class="group--input">
+                    </div>
+                    <div class="map--box"></div>
+                </fieldset>
+                    <!-- end of fieldset 1 -->
+
+                <fieldset class="fieldset">
+                    <div class="form--group">
+                        <label class="group--label" for="contact-email">Contact Email</label>
+                        <input type="email" placeholder="Your Email"
+                        name="contact-email" class="group--input">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="listing--region">Listing Region</label>
+                        <input type="email" placeholder="Select a region"
+                        name="listing--region" class="group--input">
+                        <datalist class="region">
+                            <option placeholder="Region 1"></option>
+                            <option placeholder="Region 2"></option>
+                            <option placeholder="Region 3"></option>
+                            <option placeholder="Region 4"></option>
+                            <option placeholder="Region 5"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="listing--categ">Listing Category</label>
+                        <input type="email" placeholder="Select one or more categories"
+                        name="listing--categ" class="group--input">
+                        <datalist class="categories">
+                            <option placeholder="Category 1"></option>
+                            <option placeholder="Category 2"></option>
+                            <option placeholder="Category 3"></option>
+                            <option placeholder="Category 4"></option>
+                            <option placeholder="Category 5"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                    <!-- end of fieldset 2 -->
+
+                <fieldset class="fieldset">
+                    <!--<div class="form--group">-->
+                        <!--<label class="group--label" for="files">Cover Image (optional)</label>-->
+                        <!--<input class="group--input upload" type="file" placeholder="Upload Image" id="files" name="files[]" multiple>-->
+                        <!--<output id="list"></output>-->
+                    <!--</div>-->
+
+                    <div class="form--group">
+                        <label class="group--label" for="descript">Description</label>
+                        <textarea class="descript" name="descript" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="website">Website (optional)</label>
+                        <input class="group--input" name="website" type="url" placeholder="http://">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="phone">Phone Number
+                            (optional)</label>
+                        <input class="group--input" type="tel" name="phone"
+                        placeholder="tel no">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="video">Video (optional)</label>
+                        <input class="group--input" name="video" type="url"
+                        placeholder="URL to video">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="twitter">Twitter Url (optional)</label>
+                        <input class="group--input" name="twitter" type="url"
+                        placeholder="http://">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="face">URL to Facebook (optional)</label>
+                        <input class="group--input" name="face" type="url"
+                        placeholder="http://">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="insta">Url to Instagram
+                        (optional)</label>
+                        <input class="group--input" name="insta" type="url"
+                        placeholder="http://">
+                    </div>
+                </fieldset>
+                    <!-- end of fieldset 3 -->
+
+                <input class="add--btn" type="button" value="Add Property">
+            </form>
         </div>
-            <!-- end of listings title -->
-
-        <div class="listings--modules">
-            <section class="module">
-                <div class="flag">For Sale</div>
-                <div class="module--thumb one"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <section class="heading--group">
-                        <h3 class="module--heading">Beach House</h3>
-                        <i class="fas fa-heart"></i>
-                    </section>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag">For Sale</div>
-                <div class="module--thumb two"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <section class="heading--group">
-                        <h3 class="module--heading">Roof Apartments</h3>
-                        <i class="fas fa-heart"></i>
-                    </section>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag">For Sale</div>
-                <div class="module--thumb three"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <section class="heading--group">
-                        <h3 class="module--heading">Lofts</h3>
-                        <i class="fas fa-heart"></i>
-                    </section>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag">For Sale</div>
-                <div class="module--thumb one"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <section class="heading--group">
-                        <h3 class="module--heading">Beach House</h3>
-                        <i class="fas fa-heart"></i>
-                    </section>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag">For Sale</div>
-                <div class="module--thumb two"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <section class="heading--group">
-                        <h3 class="module--heading">Roof Apartments</h3>
-                        <i class="fas fa-heart"></i>
-                    </section>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-
-            <section class="module">
-                <div class="flag">For Sale</div>
-                <div class="module--thumb three"></div>
-                    <!-- end of module thumb -->
-                <article class="module--article">
-                    <section class="heading--group">
-                        <h3 class="module--heading">Lofts</h3>
-                        <i class="fas fa-heart"></i>
-                    </section>
-                    <p>1348 209 St, Flushing</p>
-                    <p>Beds: 3 - Baths: 4 - Sqft: 1,500</p>
-                </article>
-                <div class="module--info">
-                    <p>$100.000</p>
-                    <button class="module--btn">MORE INFO</button>
-                </div>
-            </section>
-                <!-- end of listings module -->
-        </div>
-        <!-- end of listings modules -->
-
-    </div> 
+            <!-- end of wrapper -->
+    </div>
         <!-- end of container -->
-
 </section>
-<!-- end of active-listings -->
+    <!-- end of add -->
+<!-- end of add-property-form -->
 
 <!-- footer -->
 <footer class="footer">
@@ -266,5 +245,15 @@
     <!-- end of container -->
 </footer>
 <!-- end of footer -->
+
+    <script src="js/imageUpload.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
 </html>
+
+
+
+
+
+
+

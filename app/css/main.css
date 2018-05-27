@@ -66,13 +66,13 @@ table {
   font-weight: 700;
   color: #203260; }
 
-.intro .container .module .module--article .module--heading, .listings .container .listings--modules .module--article .module--heading, .tricks .tricks--modules .modules--group .module--heading, .recently-featured .container .listings--modules .module--article .module--heading, .agents .container .agents--modules .agent--module .module--heading, .listings .container .listings--modules .module--article .heading--group .module--heading {
+.intro .container .module .module--article .module--heading, .listings .container .listings--modules .module--article .module--heading, .tricks .tricks--modules .modules--group .module--heading, .recently-featured .container .listings--modules .module--article .module--heading, .agents .container .agents--modules .agent--module .module--heading, .listings .container .listings--modules .module--article .heading--group .module--heading, .add .wrapper .form--group .group--label {
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   color: #203260; }
 
-.intro .container .module .module--article p:first-of-type, .footer .container .footer--modules .module--copy, .listings .container .listings--modules .module--article p:first-of-type, .tricks .tricks--modules .modules--group .module--copy, .recently-featured .container .listings--modules .module--article p:first-of-type, .agents .container .agents--modules .agent--module .module--copy, .listings .container .listings--title .listings--view .listings--copy, .agent .agent--bio .agent--article .agent--copy, .contact .form .contact--article .article--copy {
+.intro .container .module .module--article p:first-of-type, .footer .container .footer--modules .module--copy, .listings .container .listings--modules .module--article p:first-of-type, .tricks .tricks--modules .modules--group .module--copy, .recently-featured .container .listings--modules .module--article p:first-of-type, .agents .container .agents--modules .agent--module .module--copy, .listings .container .listings--title .listings--view .listings--copy, .agent .agent--bio .agent--article .agent--copy, .add .wrapper .form--group .group--input, .contact .form .contact--article .article--copy {
   color: #a1a6b1;
   font-family: "Lato", sans-serif;
   font-size: 100%;
@@ -89,7 +89,7 @@ table {
     width: 50%;
     height: 100%; }
 
-.footer .container .module--form .module--input, .footer .container .module--form .module--btn, .agents .container .agents--modules .agent--module .module--btn, .listings .container .btn--group .btn, .contact .form .contact--article .contact--btn {
+.footer .container .module--form .module--input, .footer .container .module--form .module--btn, .agents .container .agents--modules .agent--module .module--btn, .listings .container .btn--group .btn, .add .wrapper .signin .signin--btn, .add .wrapper .form--group .group--input, .add .add--btn, .contact .form .contact--article .contact--btn {
   padding: 0;
   margin: 0;
   border: none; }
@@ -100,8 +100,10 @@ table {
   grid-template-rows: 100px 1fr;
   justify-content: center;
   height: 800px;
-  background: url("../../img/bath.jpg") no-repeat center center;
-  background-size: cover; }
+  /*.carousel-inner {
+        height: 800px;
+        z-index: -100;
+    }*/ }
   .intro .intro--header {
     background-color: #203260;
     display: flex;
@@ -859,6 +861,88 @@ table {
 
 .listings {
   margin-bottom: 100px; }
+
+.add {
+  display: flex;
+  justify-content: center; }
+  .add .container {
+    width: 1170px;
+    border: 1px solid #d6dde9;
+    margin: 100px 0; }
+  .add .wrapper {
+    margin: 40px; }
+    .add .wrapper .signin {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      background-color: #f9f9f9;
+      border: 1px solid #d6dde9; }
+      .add .wrapper .signin .signin--copy {
+        width: 80%;
+        color: #a1a6b1;
+        font-family: "Lato", sans-serif;
+        font-size: 100%;
+        font-weight: 300;
+        padding: 0 15px; }
+      .add .wrapper .signin .signin--btn {
+        background-color: #f75555;
+        color: #f3eee5;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 15px 50px;
+        margin: 13px; }
+        .add .wrapper .signin .signin--btn:hover {
+          background-color: #5b86d7;
+          cursor: pointer; }
+    .add .wrapper .form--group {
+      display: inline-block;
+      height: 75px;
+      width: 100%;
+      margin-top: 40px; }
+      .add .wrapper .form--group .group--input {
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #d6dde9; }
+        .add .wrapper .form--group .group--input::-webkit-input-placeholder {
+          padding-left: 20px; }
+        .add .wrapper .form--group .group--input:-ms-input-placeholder {
+          padding-left: 20px; }
+        .add .wrapper .form--group .group--input::-ms-input-placeholder {
+          padding-left: 20px; }
+        .add .wrapper .form--group .group--input::placeholder {
+          padding-left: 20px; }
+      .add .wrapper .form--group .descript {
+        height: 350px;
+        width: 100%;
+        background-color: rgba(161, 166, 177, 0.3);
+        margin-top: 10px;
+        border: 1px solid #d6dde9; }
+    .add .wrapper .map--box {
+      height: 350px;
+      width: 100%;
+      background-color: rgba(161, 166, 177, 0.3);
+      margin-top: 40px;
+      background: url("../img/world-map.jpg") 100% center;
+      background-size: cover;
+      border: 1px solid #d6dde9; }
+  .add .add--btn {
+    display: block;
+    width: 100%;
+    background-color: #f75555;
+    color: #f3eee5;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px 50px;
+    margin-top: 40px; }
+    .add .add--btn:hover {
+      background-color: #5b86d7;
+      cursor: pointer; }
 
 .intro--header {
   background-color: #203260;
