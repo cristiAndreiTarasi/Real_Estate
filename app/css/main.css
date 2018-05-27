@@ -100,6 +100,8 @@ table {
   grid-template-rows: 100px 1fr;
   justify-content: center;
   height: 800px;
+  background: url("../../img/bath.jpg") no-repeat center center;
+  background-size: cover;
   /*.carousel-inner {
         height: 800px;
         z-index: -100;
