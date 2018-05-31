@@ -1,0 +1,67 @@
+.carousel-inner {
+    height: 800px;
+    z-index: -100;
+
+    .carousel-item img {
+        height: 800px;
+    }
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 40vh;
+    margin-left: 100px;
+    height: 75px;
+    width: 75px;
+    background: $headerBlue;
+    opacity: 1;
+    z-index: 110;
+    @include transition(background-color);
+
+    &:hover, &:focus {
+        background-color: $accentBlue;
+        outline: none;
+        opacity: 1;
+    }
+}
+
+.carousel-control-next {
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

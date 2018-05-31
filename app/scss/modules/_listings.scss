@@ -1,9 +1,3 @@
-// Imports
-// @import "extends";
-// @import "variables";
-// @import "mixins";
-
-
 // Popupar Listing Section styles
 .listings {
     display: flex;
@@ -11,7 +5,7 @@
 
     .container {
         width: 1170px;
-        height: 830px;
+        //height: 830px;
 
         display: grid;
         grid-template-rows: 250px 1fr;
@@ -34,8 +28,10 @@
                 border: 1px solid $accentRed;
                 text-transform: uppercase;
                 padding: 5px 10px;
-                font-size: 10px;
+                font-size: 11px;
+                font-weight: 400;
                 font-family: $copyFont;
+                @include transition(all, .5s);
 
                 &:hover {
                     background-color: $accentBlue;
@@ -55,8 +51,9 @@
             .module {
                 border: 1px solid $borderGrey;
                 width: 32%;
-                height: 430px;
+                height: 450px;
                 position: relative;
+
 
                 .flag {
                     background-color: $headerBlue;
@@ -69,59 +66,72 @@
                     position: absolute;
                     top: 20px;
                     left: 20px;
+                    z-index: 100;
                 }
 
-                .one {
+                .module--thumb {
+                    display: inline-block;
                     width: 100%;
                     height: 60%;
-                    background: url('../img/module-img3.jpg') 50% center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
+                    overflow: hidden;
+
+                    .one, .two, .three {
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        @include transition(all, .5s, ease-in-out);
+                        overflow: hidden;
+
+                        &:hover {
+                           transform: scale(1.1);
+                        }
+                    }
+
                 }
 
-                .two {
-                    width: 100%;
-                    height: 60%;
-                    background: url('../img/module-img2.jpg') 50% center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
+                .one { background-image: url('../img/module-img3.jpg'); }
+                .two { background-image: url('../img/module-img2.jpg'); }
+                .three { background-image: url('../img/module-img.jpg'); }
 
-                .three {
-                    width: 100%;
-                    height: 60%;
-                    background: url('../img/module-img.jpg') 50% center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-
-                .one:hover,
-                .two:hover,
-                .three:hover {
-                    background-size: 130%;
-                }
             }
 
 
             .module--article {
                 height: auto;
 
-                .module--heading,
-                p:first-of-type {
-                    padding-left: 16px;
+                .heading--group {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .module--heading,
+                    p:first-of-type {
+                        padding-left: 16px;
+                    }
+
+                    .module--heading {
+                        @extend %module--heading;
+                        padding-top: 16px;
+                    }
+
+                    .fas {
+                        color: $grey;
+                        padding-right: 16px;
+
+                        &:hover {
+                            color: $accentRed;
+                            cursor: pointer;
+                        }
+                    }
                 }
 
-
-                .module--heading {
-                    @extend %module--heading;
-                    padding-top: 16px;
-                }
-
-                & p:first-of-type {
+                p:first-of-type { 
+                    padding-left: 16px; 
                     @extend %module--copy;
                 }
 
-                & p:last-of-type {
+                p:last-of-type {
                     color: $headerBlue;
                     font-family: $copyFont;
                     font-size: 100%;
@@ -146,10 +156,12 @@
 
                 .module--btn {
                     font-size: 11px;
+                    font-family: $headerFont;
                     color: #fff;
                     background-color: $accentRed;
                     border: none;
                     padding: 10px;
+                    @include transition(all, .5s);
 
                     &:hover {
                         background-color: $accentBlue;
@@ -160,15 +172,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

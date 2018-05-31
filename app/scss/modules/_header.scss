@@ -1,0 +1,71 @@
+    // Header-Logo-Navigation Styles
+    // overall header styles
+    .intro--header {
+        background-color: $headerBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            width: 1170px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .intro--logo {
+            height: 80px;
+        }
+
+        // navigation styles
+        .intro--list {
+            width: 750px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .list--item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .list--link {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: $linkColor; 
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    padding: 43px 40px; 
+                    vertical-align: center;
+                    @include transition(all, .5s);
+
+                    &:hover {
+                        background-color: $accentBlue;
+                        color: #fff;
+                    }
+
+                }
+
+                &:last-child {
+                    background-color: #fff;
+
+                    .list--link {
+                        color: $accentRed;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $accentBlue;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+        }
+
+    }

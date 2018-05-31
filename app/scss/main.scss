@@ -9,27 +9,18 @@
 @import "base/extends";
 @import "base/variables";
 
-// Layout
-@import "home/hero";
-@import "home/footer";
-
-// Home
-@import "home/listings";
-@import "home/tricks";
-@import "home/featured";
-@import "home/testimonial";
-@import "home/agents";
-
-// Properties
-@import "properties/properties";
-
-@import "agents/agents";
-
-@import "add/add";
-
-// Contact
-@import "contact/header";
-@import "contact/contact";
+// Modules
+@import "modules/header";
+@import "modules/hero";
+@import "modules/footer";
+@import "modules/slider";
+@import "modules/listings";
+@import "modules/tricks";
+@import "modules/testimonial";
+@import "modules/agents";
+@import "modules/agents";
+@import "modules/add";
+@import "modules/contact";
 
 
 
