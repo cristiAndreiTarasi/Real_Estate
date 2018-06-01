@@ -54,25 +54,25 @@ table {
 .intro .intro--search .intro--input, .intro .intro--search .intro--listings.type {
   border-right: 2px solid #d6dde9; }
 
-.contact .form .contact--article .input--group .contact--input, .contact .form .contact--article .contact--textarea {
+.agents .container .agents--modules .agent--module, .contact .form .contact--article .input--group .contact--input, .contact .form .contact--article .contact--textarea {
   border: 1px solid #d6dde9; }
 
 .intro .intro--search {
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1); }
 
-.listings .container .listings--title .listings--heading, .tricks .tricks--modules .tricks--heading, .contact .form .contact--article .article--heading {
+.listings .container .listings--title .listings--heading, .tricks .tricks--modules .tricks--heading, .agents .container .agents--heading, .contact .form .contact--article .article--heading {
   font-size: 32px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   color: #203260; }
 
-.intro .container .module .module--article .module--heading, .listings .container .listings--modules .module--article .heading--group .module--heading, .tricks .tricks--modules .modules--group .module--heading, .add .wrapper .form--group .group--label {
+.intro .container .module .module--article .module--heading, .listings .container .listings--modules .module--article .heading--group .module--heading, .tricks .tricks--modules .modules--group .module--heading, .agents .container .agents--modules .agent--module .module--heading, .add .wrapper .form--group .group--label {
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   color: #203260; }
 
-.intro .container .module .module--article p:first-of-type, .footer .container .footer--modules .module--copy, .listings .container .listings--modules .module--article p:first-of-type, .tricks .tricks--modules .modules--group .module--copy, .agent .agent--bio .agent--article .agent--copy, .add .wrapper .form--group .group--input, .contact .form .contact--article .article--copy {
+.intro .container .module .module--article p:first-of-type, .footer .container .footer--modules .module--copy, .listings .container .listings--modules .module--article p:first-of-type, .tricks .tricks--modules .modules--group .module--copy, .agents .container .agents--modules .agent--module .module--copy, .add .wrapper .form--group .group--input, .contact .form .contact--article .article--copy {
   color: #a1a6b1;
   font-family: "Lato", sans-serif;
   font-size: 100%;
@@ -89,7 +89,7 @@ table {
     width: 50%;
     height: 100%; }
 
-.footer .container .module--form .module--input, .footer .container .module--form .module--btn, .add .wrapper .signin .signin--btn, .add .wrapper .form--group .group--input, .add .add--btn, .contact .form .contact--article .contact--btn {
+.footer .container .module--form .module--input, .footer .container .module--form .module--btn, .agents .container .agents--modules .agent--module .module--btn, .add .wrapper .signin .signin--btn, .add .wrapper .form--group .group--input, .add .add--btn, .contact .form .contact--article .contact--btn {
   padding: 0;
   margin: 0;
   border: none; }
@@ -535,157 +535,52 @@ table {
     outline: none;
     opacity: 1; }
 
-.breadcrumbs {
-  background-color: #172343;
-  height: 200px;
+.agents {
   display: flex;
   justify-content: center; }
-  .breadcrumbs .container {
+  .agents .container {
     width: 1170px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .breadcrumbs .bread--heading {
-    font-size: 32px;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 700;
-    color: #f3eee5; }
-  .breadcrumbs .trails {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 10%; }
-    .breadcrumbs .trails a {
-      font-size: 14px;
-      font-family: "Lato", sans-serif;
-      text-decoration: none;
-      font-weight: 700;
-      color: #f75555; }
-      .breadcrumbs .trails a:hover {
-        color: rgba(247, 85, 85, 0.4); }
-    .breadcrumbs .trails .active {
-      color: #5b86d7; }
-    .breadcrumbs .trails .fas {
-      color: #5b86d7;
-      font-size: 12px; }
-
-.agent {
-  height: 650px;
-  display: flex; }
-  .agent .agent--thumb,
-  .agent .agent--bio {
-    width: 50%; }
-  .agent .agent--thumb {
-    background: url(../../img/agent_profile.jpg) center;
-    background-size: cover; }
-  .agent .agent--bio {
-    display: flex;
-    align-items: center;
-    background-color: #203260; }
-    .agent .agent--bio .agent--article {
-      padding: 0 90px; }
-      .agent .agent--bio .agent--article .agent--heading {
-        font-size: 32px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700;
-        color: #f3eee5; }
-      .agent .agent--bio .agent--article .agent--subheading {
-        font-size: 16px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700;
-        color: #5b86d7;
-        text-transform: uppercase;
-        display: block;
-        padding-top: 20px; }
-      .agent .agent--bio .agent--article .agent--copy {
-        padding-top: 50px;
-        padding-bottom: 50px; }
-      .agent .agent--bio .agent--article .social {
-        width: 80px;
-        display: flex;
-        justify-content: space-between; }
-        .agent .agent--bio .agent--article .social .fab {
-          color: #5b86d7; }
-
-.listings {
-  margin-bottom: 100px; }
-
-.breadcrumbs {
-  background-color: #172343;
-  height: 200px;
-  display: flex;
-  justify-content: center; }
-  .breadcrumbs .container {
-    width: 1170px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .breadcrumbs .bread--heading {
-    font-size: 32px;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 700;
-    color: #f3eee5; }
-  .breadcrumbs .trails {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 10%; }
-    .breadcrumbs .trails a {
-      font-size: 14px;
-      font-family: "Lato", sans-serif;
-      text-decoration: none;
-      font-weight: 700;
-      color: #f75555; }
-      .breadcrumbs .trails a:hover {
-        color: rgba(247, 85, 85, 0.4); }
-    .breadcrumbs .trails .active {
-      color: #5b86d7; }
-    .breadcrumbs .trails .fas {
-      color: #5b86d7;
-      font-size: 12px; }
-
-.agent {
-  height: 650px;
-  display: flex; }
-  .agent .agent--thumb,
-  .agent .agent--bio {
-    width: 50%; }
-  .agent .agent--thumb {
-    background: url(../../img/agent_profile.jpg) center;
-    background-size: cover; }
-  .agent .agent--bio {
-    display: flex;
-    align-items: center;
-    background-color: #203260; }
-    .agent .agent--bio .agent--article {
-      padding: 0 90px; }
-      .agent .agent--bio .agent--article .agent--heading {
-        font-size: 32px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700;
-        color: #f3eee5; }
-      .agent .agent--bio .agent--article .agent--subheading {
-        font-size: 16px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700;
-        color: #5b86d7;
-        text-transform: uppercase;
-        display: block;
-        padding-top: 20px; }
-      .agent .agent--bio .agent--article .agent--copy {
-        padding-top: 50px;
-        padding-bottom: 50px; }
-      .agent .agent--bio .agent--article .social {
-        width: 80px;
-        display: flex;
-        justify-content: space-between; }
-        .agent .agent--bio .agent--article .social .fab {
-          color: #5b86d7; }
-
-.listings {
-  margin-bottom: 100px; }
+    display: grid;
+    grid-template-rows: 200px 1fr; }
+    .agents .container .agents--heading {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 50px; }
+    .agents .container .agents--modules {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px; }
+      .agents .container .agents--modules .agent--module {
+        width: 20%;
+        display: table;
+        padding: 15px;
+        text-align: center; }
+        .agents .container .agents--modules .agent--module .agent--thumb {
+          width: 100%;
+          height: 240px;
+          background: url("../img/agent_1.jpg") center;
+          background-size: cover; }
+        .agents .container .agents--modules .agent--module .agent--article {
+          padding: 20px; }
+        .agents .container .agents--modules .agent--module .contact {
+          font-size: 18px;
+          display: block;
+          padding-top: 20px;
+          font-family: "Roboto Condensed", sans-serif;
+          font-weight: 700;
+          color: #5b86d7;
+          text-decoration: none; }
+        .agents .container .agents--modules .agent--module .module--btn {
+          background-color: transparent;
+          font-family: "Lato", sans-serif;
+          font-size: 14px;
+          color: #f75555; }
+      .agents .container .agents--modules .two .agent--thumb {
+        background: url("../img/agent_2.jpg") center; }
+      .agents .container .agents--modules .three .agent--thumb {
+        background: url("../img/agent_3.jpg") center; }
+      .agents .container .agents--modules .four .agent--thumb {
+        background: url("../img/agent_4.jpg") center; }
 
 .add {
   display: flex;

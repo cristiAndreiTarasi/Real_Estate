@@ -1,0 +1,113 @@
+
+// Imports
+//@import "extends";
+//@import "variables";
+//@import "mixins";
+
+
+// Agents Styles
+
+.agents {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1170px;
+    //height: 830px;
+
+    display: grid;
+    grid-template-rows: 200px 1fr;
+
+    .agents--heading {
+      @extend %section--heading;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 50px;
+    }
+
+    .agents--modules {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      .agent--module {
+        width: 20%;
+        display: table;
+        //height: 480px;
+        padding: 15px;
+        @extend %border;
+        text-align: center;
+
+        .agent--thumb {
+          width: 100%;
+          height: 240px;
+          background: url('../img/agent_1.jpg') center;
+          background-size: cover;
+        }
+
+        .agent--article {
+          padding: 20px;
+          //height: 213px;
+        }
+        
+        .module--heading {
+          @extend %module--heading;
+        }
+
+        .module--copy {
+          @extend %module--copy;
+        }
+
+        .contact {
+          font-size: 18px;
+          display: block;
+          padding-top: 20px;
+          font-family: $headerFont;
+          font-weight: 700;
+          color: $accentBlue;
+          text-decoration: none;
+        }
+
+        .module--btn {
+          @extend %--btn;
+          background-color: transparent;
+          font-family: $copyFont;
+          font-size: 14px;
+          color: $accentRed;
+        }
+
+      }
+
+      .two .agent--thumb {
+        background: url('../img/agent_2.jpg') center;
+      }
+
+      .three .agent--thumb {
+        background: url('../img/agent_3.jpg') center;
+      }
+
+      .four .agent--thumb {
+        background: url('../img/agent_4.jpg') center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
