@@ -1,123 +1,89 @@
-// Testimonials Styles
-//.testimonial {
-  //height: 650px;
-  //position: relative;
-  //overflow: hidden;
+.carousel-inner.testimonial {
+    height: 650px;
+    z-index: -100;
 
-  //.btn--group {
-    //z-index: 1000;
-    //position: absolute;
-    //left: 100px;
-    //bottom: 100px;
-    //padding: 0;
-    //margin: 0;
+    .carousel-item {
+        height: 650px;
+        @extend %carousel--module;
 
-    //.btn {
-      //padding: 0;
-      //margin: 0;
-      //border: none;
-      //width: 50px;
-      //height: 50px;
-      //background: $headerBlue;
-      //cursor: pointer;
-      //color: $white;
-      //border-radius: 0;
+        .testimonial--thumb {
+            background: url('../img/client_1.jpg') 100% center;
+            background-size: cover;
+        }
 
-      //&:hover, &:focus {
-        //background-color: $accentBlue;
-        //outline: none;
-      //}
-    //}
+        .testimonial--quote {
+            background: $mediumBlue;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    //.next { 
-      //margin-left: -4px; 
-    //}
-  //}
+            .testimonial--blockquote {
+                padding: 70px;
 
-  //// Carousel Mosule(all three) Styles
-  //.carousel--module {
-    //@extend %carousel--module;
-  //}
+                .fas {
+                    font-size: 2em;
+                    margin-bottom: 40px;
+                    color: #ff6363;
+                }
 
-  //.one {
-    //top: 0;
-    //left: 0;
+                .testimonial--copy {
+                    color: $white;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    font-size: 2em;
+                }
 
-    //.testimonial--thumb {
-      //background: url('../img/client_1.jpg') 100% center;
-      //background-size: cover;
-    //}
-  //}
+                .testimonial--list {
+                    margin-top: 40px;
 
- //.two {
-    //top: 0;
-    //left: 100%;
+                    .list--item:first-child {
+                        font-family: $headerFont;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $white;
+                        margin-bottom: 20px;
+                    }
 
-    //.testimonial--thumb {
-      //background: url('../img/client_2.jpg') 100% center;
-      //background-size: cover;
-    //}
-  //}
+                    .list--item:last-child {
+                        font-family: $copyFont;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $accentBlue;
+                    }
+                }
+            }
+        }
+    }
+}
 
-  //.three {
-    //top: 0;
-    //left: 200%;
+.btn--group {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  display: flex;
+  height: 90px;
+  width: 180px;
+}
 
-    //.testimonial--thumb {
-      //background: url('../img/client_1.jpg') 100% center;
-      //background-size: cover;
-    //}
-  //}
+.carousel-control-prev.left,
+.carousel-control-next.right {
+    margin: 0;
+    //margin-left: 100px;
+    height: 90px;
+    width: 90px;
+    background: $headerBlue;
+    opacity: 1;
+    z-index: 110;
+    @include transition(background-color);
 
-    //.testimonial--quote {
-      //background: $mediumBlue;
-      //width: 50%;
-      //height: 100%;
-      //display: flex;
-      //justify-content: center;
-      //align-items: center;
-
-      //.testimonial--blockquote {
-        //padding: 70px;
-
-        //.fas {
-          //font-size: 2em;
-          //margin-bottom: 40px;
-          //color: #ff6363;
-        //}
-
-        //.testimonial--copy {
-          //color: $white;
-          //font-family: $headerFont;
-          //font-weight: 700;
-          //font-size: 2em;
-        //}
-
-        //.testimonial--list {
-          //margin-top: 40px;
-
-          //.list--item:first-child {
-            //font-family: $headerFont;
-            //font-weight: 700;
-            //font-size: 18px;
-            //color: $white;
-            //margin-bottom: 20px;
-          //}
-
-          //.list--item:last-child {
-            //font-family: $copyFont;
-            //font-weight: 400;
-            //font-size: 16px;
-            //color: $accentBlue;
-          //}
-        //}
-      //}
-    //}
-//}
-
-
-
-
+    &:hover, &:focus {
+        background-color: $accentBlue;
+        outline: none;
+        opacity: 1;
+    }
+}
 
 
 

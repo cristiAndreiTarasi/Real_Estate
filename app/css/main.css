@@ -80,6 +80,15 @@ table {
   padding-top: 16px;
   line-height: 22px; }
 
+.carousel-inner.testimonial .carousel-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex; }
+  .carousel-inner.testimonial .carousel-item .testimonial--thumb {
+    width: 50%;
+    height: 100%; }
+
 .footer .container .module--form .module--input, .footer .container .module--form .module--btn, .add .wrapper .signin .signin--btn, .add .wrapper .form--group .group--input, .add .add--btn, .contact .form .contact--article .contact--btn {
   padding: 0;
   margin: 0;
@@ -296,12 +305,6 @@ table {
   .carousel-inner .carousel-item img {
     height: 800px; }
 
-.carousel-inner.testimonial {
-  height: 650px;
-  z-index: -100; }
-  .carousel-inner.testimonial .carousel-item img {
-    height: 650px; }
-
 .carousel-control-prev,
 .carousel-control-next {
   margin-top: 40vh;
@@ -315,31 +318,6 @@ table {
   .carousel-control-prev:hover, .carousel-control-prev:focus,
   .carousel-control-next:hover,
   .carousel-control-next:focus {
-    background-color: #5b86d7;
-    outline: none;
-    opacity: 1; }
-
-.btn--group {
-  position: absolute;
-  left: 90px;
-  bottom: 90px;
-  display: flex;
-  height: 90px;
-  width: 180px;
-  background-color: red; }
-
-.carousel-control-prev.left,
-.carousel-control-next.right {
-  margin: 0;
-  height: 90px;
-  width: 90px;
-  background: #203260;
-  opacity: 1;
-  z-index: 110;
-  transition: background-color 0.2s ease-in-out; }
-  .carousel-control-prev.left:hover, .carousel-control-prev.left:focus,
-  .carousel-control-next.right:hover,
-  .carousel-control-next.right:focus {
     background-color: #5b86d7;
     outline: none;
     opacity: 1; }
@@ -492,6 +470,70 @@ table {
       .tricks .tricks--modules .modules--group .module--img {
         color: #5b86d7;
         margin-right: 40px; }
+
+.carousel-inner.testimonial {
+  height: 650px;
+  z-index: -100; }
+  .carousel-inner.testimonial .carousel-item {
+    height: 650px; }
+    .carousel-inner.testimonial .carousel-item .testimonial--thumb {
+      background: url("../img/client_1.jpg") 100% center;
+      background-size: cover; }
+    .carousel-inner.testimonial .carousel-item .testimonial--quote {
+      background: #213361;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .carousel-inner.testimonial .carousel-item .testimonial--quote .testimonial--blockquote {
+        padding: 70px; }
+        .carousel-inner.testimonial .carousel-item .testimonial--quote .testimonial--blockquote .fas {
+          font-size: 2em;
+          margin-bottom: 40px;
+          color: #ff6363; }
+        .carousel-inner.testimonial .carousel-item .testimonial--quote .testimonial--blockquote .testimonial--copy {
+          color: #f3eee5;
+          font-family: "Roboto Condensed", sans-serif;
+          font-weight: 700;
+          font-size: 2em; }
+        .carousel-inner.testimonial .carousel-item .testimonial--quote .testimonial--blockquote .testimonial--list {
+          margin-top: 40px; }
+          .carousel-inner.testimonial .carousel-item .testimonial--quote .testimonial--blockquote .testimonial--list .list--item:first-child {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #f3eee5;
+            margin-bottom: 20px; }
+          .carousel-inner.testimonial .carousel-item .testimonial--quote .testimonial--blockquote .testimonial--list .list--item:last-child {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #5b86d7; }
+
+.btn--group {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  display: flex;
+  height: 90px;
+  width: 180px; }
+
+.carousel-control-prev.left,
+.carousel-control-next.right {
+  margin: 0;
+  height: 90px;
+  width: 90px;
+  background: #203260;
+  opacity: 1;
+  z-index: 110;
+  transition: background-color 0.2s ease-in-out; }
+  .carousel-control-prev.left:hover, .carousel-control-prev.left:focus,
+  .carousel-control-next.right:hover,
+  .carousel-control-next.right:focus {
+    background-color: #5b86d7;
+    outline: none;
+    opacity: 1; }
 
 .breadcrumbs {
   background-color: #172343;
