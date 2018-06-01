@@ -296,12 +296,18 @@ table {
   .carousel-inner .carousel-item img {
     height: 800px; }
 
+.carousel-inner.testimonial {
+  height: 650px;
+  z-index: -100; }
+  .carousel-inner.testimonial .carousel-item img {
+    height: 650px; }
+
 .carousel-control-prev,
 .carousel-control-next {
   margin-top: 40vh;
   margin-left: 100px;
-  height: 75px;
-  width: 75px;
+  height: 90px;
+  width: 90px;
   background: #203260;
   opacity: 1;
   z-index: 110;
@@ -309,6 +315,31 @@ table {
   .carousel-control-prev:hover, .carousel-control-prev:focus,
   .carousel-control-next:hover,
   .carousel-control-next:focus {
+    background-color: #5b86d7;
+    outline: none;
+    opacity: 1; }
+
+.btn--group {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  display: flex;
+  height: 90px;
+  width: 180px;
+  background-color: red; }
+
+.carousel-control-prev.left,
+.carousel-control-next.right {
+  margin: 0;
+  height: 90px;
+  width: 90px;
+  background: #203260;
+  opacity: 1;
+  z-index: 110;
+  transition: background-color 0.2s ease-in-out; }
+  .carousel-control-prev.left:hover, .carousel-control-prev.left:focus,
+  .carousel-control-next.right:hover,
+  .carousel-control-next.right:focus {
     background-color: #5b86d7;
     outline: none;
     opacity: 1; }

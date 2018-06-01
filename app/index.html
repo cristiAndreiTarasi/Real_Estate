@@ -98,7 +98,6 @@
 
 <!-- listings -->
 <section class="listings">
-
     <div class="container">
         <div class="listings--title">
             <h2 class="listings--heading">Popular Listings</h2>
@@ -314,16 +313,11 @@
 
 <!-- testimonials -->
 <section class="testimonial">
-  <!--<section class="btn--group">-->
-    <!--<button class="btn prev"><i class="fas fa-arrow-left fa-lg"></i></button>-->
-    <!--<button class="btn next"><i class="fas fa-arrow-right fa-lg"></i></button>-->
-  <!--</section>-->
-
     <!-- Carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
         <!--Carousel Inner-->
-        <div class="carousel-inner">
+        <div class="carousel-inner testimonial">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="img/slide_1.jpg" alt="First slide">
             </div>
@@ -337,14 +331,16 @@
         <!--End of Carousel Inner-->
 
         <!--Carousel Controls / Left & Right-->
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="btn--group">
+            <a class="carousel-control-prev left" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+           </a>
+            <a class="carousel-control-next right" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         <!--End of Carousel Controls / Left & Right-->
     </div>
     <!-- End of Carousel -->

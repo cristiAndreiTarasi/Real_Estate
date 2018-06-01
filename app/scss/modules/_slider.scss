@@ -8,12 +8,50 @@
     
 }
 
+.carousel-inner.testimonial {
+    height: 650px;
+    z-index: -100;
+
+    .carousel-item img {
+        height: 650px;
+    }
+    
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     margin-top: 40vh;
     margin-left: 100px;
-    height: 75px;
-    width: 75px;
+    height: 90px;
+    width: 90px;
+    background: $headerBlue;
+    opacity: 1;
+    z-index: 110;
+    @include transition(background-color);
+
+    &:hover, &:focus {
+        background-color: $accentBlue;
+        outline: none;
+        opacity: 1;
+    }
+}
+
+.btn--group {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  display: flex;
+  height: 90px;
+  width: 180px;
+  background-color: red;
+}
+
+.carousel-control-prev.left,
+.carousel-control-next.right {
+    margin: 0;
+    //margin-left: 100px;
+    height: 90px;
+    width: 90px;
     background: $headerBlue;
     opacity: 1;
     z-index: 110;
@@ -29,39 +67,3 @@
 .carousel-control-next {
     margin-right: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
