@@ -11,8 +11,13 @@
     justify-content: center;
 
     height: 800px;
-    // background: url('../../img/bath.jpg') no-repeat center center;
-    //background-size: cover;
+
+    
+    .google--map {
+      background: url('../img/world-map.jpg') 100% center;
+      height: 800px;
+      width: 100%;
+    }
 
     // Floating listing panel Styles
     .container {

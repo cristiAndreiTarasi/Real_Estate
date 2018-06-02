@@ -144,6 +144,10 @@ table {
   grid-template-rows: 100px 1fr;
   justify-content: center;
   height: 800px; }
+  .intro .google--map {
+    background: url("../img/world-map.jpg") 100% center;
+    height: 800px;
+    width: 100%; }
   .intro .container {
     width: 1170px;
     height: 400px;
@@ -355,7 +359,8 @@ table {
           cursor: pointer; }
     .listings .container .listings--modules {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-bottom: 100px; }
       .listings .container .listings--modules .module {
         border: 1px solid #d6dde9;
         width: 32%;
